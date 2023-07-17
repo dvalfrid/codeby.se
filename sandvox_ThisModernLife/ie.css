@@ -1,0 +1,14 @@
+@charset "UTF-8";
+#page-content {
+    margin-left: 0px !important;
+}
+
+* html #sitemenu-content ul {
+	margin-left:7px;
+	width:100%;
+}
+
+
+.photogrid-index {
+	width:630px!important;
+}
