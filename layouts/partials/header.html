@@ -1,9 +1,20 @@
 <header class="site-header">
   <div class="container site-header__inner">
-    <a class="site-logo" href="{{ relLangURL "/" }}">{{ site.Title }}</a>
+    <a class="site-logo" href="{{ relLangURL "/" }}">
+      <img src="/logo.png" width="80" height="80" alt="">
+      <span class="site-logo__text">{{ site.Title }}</span>
+    </a>
     <div class="lang-switch">
-      {{ range .Translations }}
-        <a href="{{ .RelPermalink }}">{{ if eq .Language.Lang "en" }}Svenska{{ else }}In English{{ end }}</a>
+      {{ if eq .Language.Lang "sv" }}
+        <span class="lang-flag lang-flag--active" aria-current="true" title="Svenska">{{ partial "flag-se.html" . }}</span>
+        {{ range .Translations }}
+          <a class="lang-flag" href="{{ .RelPermalink }}" title="English">{{ partial "flag-gb.html" . }}</a>
+        {{ end }}
+      {{ else }}
+        {{ range .Translations }}
+          <a class="lang-flag" href="{{ .RelPermalink }}" title="Svenska">{{ partial "flag-se.html" . }}</a>
+        {{ end }}
+        <span class="lang-flag lang-flag--active" aria-current="true" title="English">{{ partial "flag-gb.html" . }}</span>
       {{ end }}
     </div>
   </div>

@@ -11,19 +11,56 @@
 }
 
 .site-logo {
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   text-decoration: none;
   color: var(--color-text);
 }
 
-.lang-switch a {
-  text-decoration: none;
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
+.site-logo img {
+  display: block;
+  border-radius: 6px;
 }
 
-.lang-switch a:hover {
-  color: var(--color-primary);
+.site-logo__text {
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.lang-flag {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0.4;
+  filter: grayscale(60%);
+  transition: opacity 0.15s ease, filter 0.15s ease, transform 0.15s ease;
+}
+
+.lang-flag svg {
+  display: block;
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px var(--color-border);
+}
+
+a.lang-flag:hover,
+a.lang-flag:focus {
+  opacity: 0.8;
+  filter: grayscale(0%);
+}
+
+.lang-flag--active {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.15);
 }
 
 .hero {
