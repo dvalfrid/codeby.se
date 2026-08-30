@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+{{ partial "seo.html" . }}
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{ $tokens := resources.Get "css/tokens.css" }}
+{{ $main := resources.Get "css/main.css" }}
+{{ $components := resources.Get "css/components.css" }}
+{{ $css := slice $tokens $main $components | resources.Concat "css/bundle.css" }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ else }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+{{ end }}

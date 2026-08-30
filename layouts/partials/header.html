@@ -1,0 +1,10 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-logo" href="{{ relLangURL "/" }}">{{ site.Title }}</a>
+    <div class="lang-switch">
+      {{ range .Translations }}
+        <a href="{{ .RelPermalink }}">{{ if eq .Language.Lang "en" }}Svenska{{ else }}In English{{ end }}</a>
+      {{ end }}
+    </div>
+  </div>
+</header>

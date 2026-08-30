@@ -1,0 +1,31 @@
+baseURL = "https://codeby.se/"
+locale = "sv-SE"
+title = "Code By AB"
+defaultContentLanguage = "sv"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+
+[languages]
+  [languages.sv]
+    label = "Svenska"
+    locale = "sv-SE"
+    weight = 1
+    [languages.sv.params]
+      description = "Konsultverksamhet inom mjukvaruutveckling och mjukvaruarkitektur."
+  [languages.en]
+    label = "English"
+    locale = "en-US"
+    weight = 2
+    [languages.en.params]
+      description = "Consulting within software development and software architecture."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[minify]
+  minifyOutput = true
+
+[outputs]
+  home = ["HTML"]
