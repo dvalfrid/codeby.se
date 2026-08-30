@@ -14,3 +14,14 @@
   --space-3: 1.5rem;
   --space-4: 2.5rem;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #7ea6e8;
+    --color-primary-dark: #aecbf2;
+    --color-bg: #12161c;
+    --color-text: #e4e6eb;
+    --color-text-muted: #9aa1ac;
+    --color-border: #2b313b;
+  }
+}

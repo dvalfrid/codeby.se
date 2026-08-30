@@ -47,7 +47,7 @@ a:focus {
   left: -9999px;
   top: 0;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-bg);
   padding: var(--space-1) var(--space-2);
   z-index: 10;
 }
