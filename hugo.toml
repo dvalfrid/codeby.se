@@ -4,6 +4,14 @@ title = "Code By AB"
 defaultContentLanguage = "sv"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
+# Single-page site: no categories/tags pages, so keep them out of the
+# build and the sitemap.
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  twitter = "codebyab"
+  orgNumber = "559010-7065"
+  email = "daniel@codeby.se"
 
 [languages]
   [languages.sv]
