@@ -9,7 +9,6 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
 
 [params]
-  twitter = "codebyab"
   orgNumber = "559010-7065"
   email = "daniel@codeby.se"
 

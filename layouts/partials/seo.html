@@ -19,9 +19,6 @@
 <meta property="og:image:height" content="160">
 <meta property="og:image:alt" content="{{ site.Title }}">
 <meta name="twitter:card" content="summary">
-{{- with site.Params.twitter }}
-<meta name="twitter:site" content="@{{ . }}">
-{{- end }}
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
 <meta name="twitter:image" content="{{ $image }}">
@@ -37,7 +34,6 @@
   "email" site.Params.email
   "taxID" site.Params.orgNumber
   "address" (dict "@type" "PostalAddress" "addressCountry" "SE")
-  "sameAs" (slice (printf "https://twitter.com/%s" site.Params.twitter))
 }}
 <script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
 {{- end }}
