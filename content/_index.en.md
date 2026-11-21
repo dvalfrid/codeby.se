@@ -8,13 +8,13 @@ Consulting within software development and software architecture.
 
 ## Our own projects
 
-- [RIGStats](https://rigstats.app/): a free hardware monitor and control
+- ![](/projects/rigstats.png)[RIGStats](https://rigstats.app/): a free hardware monitor and control
   center for Windows gaming PCs, with temperatures on a second screen or in
   the game, fan curves, RGB and profiles that switch by themselves.
-- [Proton Mail MCP](https://proton-mail-mcp.codeby.se/): an open-source MCP
+- ![](/projects/proton-mail-mcp.png)[Proton Mail MCP](https://proton-mail-mcp.codeby.se/): an open-source MCP
   server that lets Claude read, search, organise and draft your Proton Mail
   through Proton Mail Bridge, locally on your own computer.
-- [Branchline](https://git-branchline.codeby.se/): a plugin for Claude Code
+- ![](/projects/branchline.png)[Branchline](https://git-branchline.codeby.se/): a plugin for Claude Code
   that shows your repository's live Git history in a pane beside the chat.
 
 ## Contact
