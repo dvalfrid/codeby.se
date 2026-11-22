@@ -17,6 +17,14 @@ Consulting within software development and software architecture.
 - ![Branchline logo](/projects/branchline.png)[Branchline](https://git-branchline.codeby.se/): a plugin for Claude Code
   that shows your repository's live Git history in a pane beside the chat.
 
+## Pro bono work
+
+- ![Gubbängens Barnklädesbyte logo](/projects/gubbangenskladbyte.png)[Gubbängens Barnklädesbyte](https://gubbangenskladbyte.se/):
+  we built and run the website for a non-profit second-hand market for
+  children's things in Gubbängen, Stockholm, run by volunteers since 1978.
+  It replaced the old WordPress site, and the volunteers manage the content
+  themselves.
+
 ## Contact
 
 Email: [daniel@codeby.se](mailto:daniel@codeby.se) ([PGP key](/502f4fa003332517decd4441a3f.asc))  
