@@ -1,8 +1,10 @@
 <header class="site-header">
   <div class="container site-header__inner">
     <a class="site-logo" href="{{ relLangURL "/" }}">
-      <img src="/logo.png" width="80" height="80" alt="">
-      <span class="site-logo__text">{{ site.Title }}</span>
+      <picture>
+        <source srcset="/logo-dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="/logo-light.svg" width="128" height="72" alt="{{ site.Title }}">
+      </picture>
     </a>
     <div class="lang-switch">
       {{ if eq .Language.Lang "sv" }}

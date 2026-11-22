@@ -20,12 +20,8 @@
 
 .site-logo img {
   display: block;
-  border-radius: 6px;
-}
-
-.site-logo__text {
-  font-weight: 700;
-  font-size: 1.75rem;
+  width: auto;
+  height: 72px;
 }
 
 .lang-switch {

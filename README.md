@@ -56,8 +56,17 @@ från äldre branch-baserad Pages-publicering).
 
 ## Tillgångar
 
-- **Logotyp** (`static/logo.png`): transparent PNG, används både som
-  favicon och som logotyp i sidhuvudet (`layouts/partials/header.html`).
+- **Logotyp**: originalen ligger i `design/` (SVG, texten i Montserrat
+  omgjord till konturer) och alla PNG-storlekar i `design/export/`
+  (LinkedIn, Open Graph, ikoner). På sajten används:
+  - `static/logo-light.svg` / `static/logo-dark.svg` i sidhuvudet,
+    växlar med ljust/mörkt läge (`layouts/partials/header.html`).
+  - `static/favicon.svg`, `static/favicon.ico` och
+    `static/apple-touch-icon.png` som ikoner.
+  - `static/og-image.png` (1200×630) vid delning och `static/logo-512.png`
+    som logotyp i JSON-LD.
+- **"Built by Code By AB"-märket** för de egna projektens sajter:
+  `design/built-by-badge.html`.
 - **PGP-nyckel** (`static/502f4fa003332517decd4441a3f.asc`): publik nyckel,
   länkad från kontaktstycket på sidan.
 
